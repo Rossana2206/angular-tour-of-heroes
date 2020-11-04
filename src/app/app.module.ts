@@ -4,19 +4,25 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatSliderModule} from "@angular/material/slider";
+import {MatSliderModule} from '@angular/material/slider';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { InputPanelComponent } from './core/component/input-panel/input-panel.component';
+import { ButtonPanelComponent } from './core/component/button-panel/button-panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    InputPanelComponent,
+    ButtonPanelComponent,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule,
-    MatSliderModule,
-    BrowserAnimationsModule
-  ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        AppRoutingModule,
+        MatSliderModule,
+        BrowserAnimationsModule,
+        MatFormFieldModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
