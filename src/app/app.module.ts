@@ -8,6 +8,9 @@ import {MatSliderModule} from '@angular/material/slider';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { InputPanelComponent } from './core/component/input-panel/input-panel.component';
 import { ButtonPanelComponent } from './core/component/button-panel/button-panel.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -15,14 +18,17 @@ import { ButtonPanelComponent } from './core/component/button-panel/button-panel
     InputPanelComponent,
     ButtonPanelComponent,
   ],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        AppRoutingModule,
-        MatSliderModule,
-        BrowserAnimationsModule,
-        MatFormFieldModule
-    ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+    MatSliderModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatCardModule,
+    MatButtonModule,
+    FlexLayoutModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
